@@ -16,6 +16,9 @@
 		4FC7830D1E645F2300064B12 /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC783061E645F2300064B12 /* Friends.xcassets */; };
 		4FC7830E1E645F2300064B12 /* Launch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC783071E645F2300064B12 /* Launch.xcassets */; };
 		4FC7830F1E645F2300064B12 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FC783081E645F2300064B12 /* Mine.xcassets */; };
+		4FC783151E64644A00064B12 /* YQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC783141E64644A00064B12 /* YQTabBarController.m */; };
+		4FC783191E6464E400064B12 /* UIColor+YQWechat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC783181E6464E400064B12 /* UIColor+YQWechat.m */; };
+		4FC7831F1E64675C00064B12 /* YQRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7831E1E64675C00064B12 /* YQRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,14 @@
 		4FC783061E645F2300064B12 /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
 		4FC783071E645F2300064B12 /* Launch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Launch.xcassets; sourceTree = "<group>"; };
 		4FC783081E645F2300064B12 /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
+		4FC783131E64644A00064B12 /* YQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQTabBarController.h; sourceTree = "<group>"; };
+		4FC783141E64644A00064B12 /* YQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQTabBarController.m; sourceTree = "<group>"; };
+		4FC783171E6464E400064B12 /* UIColor+YQWechat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YQWechat.h"; sourceTree = "<group>"; };
+		4FC783181E6464E400064B12 /* UIColor+YQWechat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YQWechat.m"; sourceTree = "<group>"; };
+		4FC7831B1E64658F00064B12 /* YQMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQMacros.h; sourceTree = "<group>"; };
+		4FC7831C1E64660400064B12 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4FC7831D1E64675C00064B12 /* YQRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRootViewController.h; sourceTree = "<group>"; };
+		4FC7831E1E64675C00064B12 /* YQRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +76,12 @@
 			children = (
 				4FC782E91E64486000064B12 /* AppDelegate.h */,
 				4FC782EA1E64486000064B12 /* AppDelegate.m */,
-				4FC782F71E64486000064B12 /* Info.plist */,
+				4FC7831A1E64657B00064B12 /* Config */,
+				4FC783161E6464B900064B12 /* Utilities */,
+				4FC783121E64641300064B12 /* Src */,
 				4FC782E61E64486000064B12 /* Supporting Files */,
 				4FC783011E645F0A00064B12 /* Resources */,
+				4FC782F71E64486000064B12 /* Info.plist */,
 			);
 			path = YQWechat;
 			sourceTree = "<group>";
@@ -76,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				4FC782E71E64486000064B12 /* main.m */,
+				4FC7831C1E64660400064B12 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -92,6 +107,34 @@
 				4FC783081E645F2300064B12 /* Mine.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4FC783121E64641300064B12 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				4FC783131E64644A00064B12 /* YQTabBarController.h */,
+				4FC783141E64644A00064B12 /* YQTabBarController.m */,
+				4FC7831D1E64675C00064B12 /* YQRootViewController.h */,
+				4FC7831E1E64675C00064B12 /* YQRootViewController.m */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		4FC783161E6464B900064B12 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4FC783171E6464E400064B12 /* UIColor+YQWechat.h */,
+				4FC783181E6464E400064B12 /* UIColor+YQWechat.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4FC7831A1E64657B00064B12 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4FC7831B1E64658F00064B12 /* YQMacros.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC783151E64644A00064B12 /* YQTabBarController.m in Sources */,
 				4FC782EB1E64486000064B12 /* AppDelegate.m in Sources */,
 				4FC782E81E64486000064B12 /* main.m in Sources */,
+				4FC7831F1E64675C00064B12 /* YQRootViewController.m in Sources */,
+				4FC783191E6464E400064B12 /* UIColor+YQWechat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YQWechat/PrefixHeader.pch";
 				INFOPLIST_FILE = YQWechat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Melody5417.YQWechat;
@@ -284,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YQWechat/PrefixHeader.pch";
 				INFOPLIST_FILE = YQWechat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Melody5417.YQWechat;

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YQRootViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
   
     [self initUI];
     
@@ -53,7 +54,7 @@
 #pragma mark - private methods
 
 - (void)initUI {
-  UITabBarController *rootVC = [[UITabBarController alloc] init];
+  YQRootViewController *rootVC = [[YQRootViewController alloc] init];
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   [self.window setRootViewController:rootVC];
   [self.window addSubview:rootVC.view];
