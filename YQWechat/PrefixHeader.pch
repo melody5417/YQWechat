@@ -13,5 +13,7 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "YQMacros.h"            // 宏
 #import "UIColor+YQWechat.h"    // 颜色
+#import "UIFont+TLChat.h"       // 字体
+#import "YQNavigationController.h"
 
 #endif /* PrefixHeader_pch */
