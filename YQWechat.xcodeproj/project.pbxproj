@@ -79,6 +79,7 @@
 				4FC7831A1E64657B00064B12 /* Config */,
 				4FC783161E6464B900064B12 /* Utilities */,
 				4FC783121E64641300064B12 /* Src */,
+				4FC783221E650E7700064B12 /* Frameworks */,
 				4FC782E61E64486000064B12 /* Supporting Files */,
 				4FC783011E645F0A00064B12 /* Resources */,
 				4FC782F71E64486000064B12 /* Info.plist */,
@@ -135,6 +136,13 @@
 				4FC7831B1E64658F00064B12 /* YQMacros.h */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		4FC783221E650E7700064B12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +366,7 @@
 				4FC782FC1E64486000064B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
