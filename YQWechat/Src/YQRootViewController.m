@@ -8,10 +8,12 @@
 
 #import "YQRootViewController.h"
 #import "YQConversationViewController.h"
+#import "YQContactViewController.h"
 
 @interface YQRootViewController ()
 @property (nonatomic, strong) NSArray *childVCArray;
 @property (nonatomic, strong) YQConversationViewController *conversationVC;
+@property (nonatomic, strong) YQContactViewController *contactVC;
 @end
 
 @implementation YQRootViewController
@@ -37,8 +39,7 @@ static YQRootViewController *sharedInstance;
 - (NSArray *)childVCArray {
     if (!_childVCArray) {
         YQNavigationController *vc1 = [[YQNavigationController alloc] initWithRootViewController:self.conversationVC];
-        UIViewController *vc2 = [[UIViewController alloc] init];
-        vc2.tabBarItem.title = @"通讯录";
+        YQNavigationController *vc2 = [[YQNavigationController alloc] initWithRootViewController:self.contactVC];
         UIViewController *vc3 = [[UIViewController alloc] init];
         vc3.tabBarItem.title = @"发现";
         UIViewController *vc4 = [[UIViewController alloc] init];
@@ -57,6 +58,16 @@ static YQRootViewController *sharedInstance;
         _conversationVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_mainframeHL"];
     }
     return _conversationVC;
+}
+
+- (YQContactViewController *)contactVC {
+    if (!_contactVC) {
+        _contactVC = [[YQContactViewController alloc] init];
+        _contactVC.tabBarItem.title = @"通讯录";
+        _contactVC.tabBarItem.image = [UIImage imageNamed:@"tabbar_contacts"];
+        _contactVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_contactsHL"];
+    }
+    return _contactVC;
 }
 
 @end

@@ -23,6 +23,7 @@
 		4FC783321E6558D100064B12 /* YQConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC783311E6558D100064B12 /* YQConversationViewController.m */; };
 		4FC783351E6559D700064B12 /* YQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC783341E6559D700064B12 /* YQNavigationController.m */; };
 		4FC783381E655B5800064B12 /* UIFont+TLChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC783371E655B5800064B12 /* UIFont+TLChat.m */; };
+		4FC7833B1E65662D00064B12 /* YQContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7833A1E65662D00064B12 /* YQContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		4FC783341E6559D700064B12 /* YQNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQNavigationController.m; sourceTree = "<group>"; };
 		4FC783361E655B5800064B12 /* UIFont+TLChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+TLChat.h"; sourceTree = "<group>"; };
 		4FC783371E655B5800064B12 /* UIFont+TLChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TLChat.m"; sourceTree = "<group>"; };
+		4FC783391E65662D00064B12 /* YQContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQContactViewController.h; sourceTree = "<group>"; };
+		4FC7833A1E65662D00064B12 /* YQContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 		4FC783231E65550800064B12 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				4FC783391E65662D00064B12 /* YQContactViewController.h */,
+				4FC7833A1E65662D00064B12 /* YQContactViewController.m */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				4FC783381E655B5800064B12 /* UIFont+TLChat.m in Sources */,
 				4FC7832C1E65576D00064B12 /* YQTabBarController.m in Sources */,
 				4FC782EB1E64486000064B12 /* AppDelegate.m in Sources */,
+				4FC7833B1E65662D00064B12 /* YQContactViewController.m in Sources */,
 				4FC782E81E64486000064B12 /* main.m in Sources */,
 				4FC7831F1E64675C00064B12 /* YQRootViewController.m in Sources */,
 				4FC783191E6464E400064B12 /* UIColor+YQWechat.m in Sources */,
