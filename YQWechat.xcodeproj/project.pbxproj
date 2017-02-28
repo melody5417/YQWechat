@@ -24,6 +24,8 @@
 		4FC783351E6559D700064B12 /* YQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC783341E6559D700064B12 /* YQNavigationController.m */; };
 		4FC783381E655B5800064B12 /* UIFont+TLChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC783371E655B5800064B12 /* UIFont+TLChat.m */; };
 		4FC7833B1E65662D00064B12 /* YQContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7833A1E65662D00064B12 /* YQContactViewController.m */; };
+		4FC7833E1E656A5300064B12 /* YQDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7833D1E656A5300064B12 /* YQDiscoverViewController.m */; };
+		4FC783411E656A6500064B12 /* YQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC783401E656A6500064B12 /* YQMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,10 @@
 		4FC783371E655B5800064B12 /* UIFont+TLChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TLChat.m"; sourceTree = "<group>"; };
 		4FC783391E65662D00064B12 /* YQContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQContactViewController.h; sourceTree = "<group>"; };
 		4FC7833A1E65662D00064B12 /* YQContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQContactViewController.m; sourceTree = "<group>"; };
+		4FC7833C1E656A5300064B12 /* YQDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQDiscoverViewController.h; sourceTree = "<group>"; };
+		4FC7833D1E656A5300064B12 /* YQDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQDiscoverViewController.m; sourceTree = "<group>"; };
+		4FC7833F1E656A6500064B12 /* YQMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQMeViewController.h; sourceTree = "<group>"; };
+		4FC783401E656A6500064B12 /* YQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,8 @@
 		4FC783251E65550800064B12 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				4FC7833C1E656A5300064B12 /* YQDiscoverViewController.h */,
+				4FC7833D1E656A5300064B12 /* YQDiscoverViewController.m */,
 			);
 			path = Discovery;
 			sourceTree = "<group>";
@@ -193,6 +201,8 @@
 		4FC783261E65550800064B12 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				4FC7833F1E656A6500064B12 /* YQMeViewController.h */,
+				4FC783401E656A6500064B12 /* YQMeViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -288,12 +298,14 @@
 				4FC783321E6558D100064B12 /* YQConversationViewController.m in Sources */,
 				4FC783351E6559D700064B12 /* YQNavigationController.m in Sources */,
 				4FC783381E655B5800064B12 /* UIFont+TLChat.m in Sources */,
+				4FC7833E1E656A5300064B12 /* YQDiscoverViewController.m in Sources */,
 				4FC7832C1E65576D00064B12 /* YQTabBarController.m in Sources */,
 				4FC782EB1E64486000064B12 /* AppDelegate.m in Sources */,
 				4FC7833B1E65662D00064B12 /* YQContactViewController.m in Sources */,
 				4FC782E81E64486000064B12 /* main.m in Sources */,
 				4FC7831F1E64675C00064B12 /* YQRootViewController.m in Sources */,
 				4FC783191E6464E400064B12 /* UIColor+YQWechat.m in Sources */,
+				4FC783411E656A6500064B12 /* YQMeViewController.m in Sources */,
 				4FC7832F1E6557A900064B12 /* YQTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

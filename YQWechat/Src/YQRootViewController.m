@@ -9,11 +9,15 @@
 #import "YQRootViewController.h"
 #import "YQConversationViewController.h"
 #import "YQContactViewController.h"
+#import "YQDiscoverViewController.h"
+#import "YQMeViewController.h"
 
 @interface YQRootViewController ()
 @property (nonatomic, strong) NSArray *childVCArray;
 @property (nonatomic, strong) YQConversationViewController *conversationVC;
 @property (nonatomic, strong) YQContactViewController *contactVC;
+@property (nonatomic, strong) YQDiscoverViewController *discoverVC;
+@property (nonatomic, strong) YQMeViewController *meVC;
 @end
 
 @implementation YQRootViewController
@@ -40,10 +44,8 @@ static YQRootViewController *sharedInstance;
     if (!_childVCArray) {
         YQNavigationController *vc1 = [[YQNavigationController alloc] initWithRootViewController:self.conversationVC];
         YQNavigationController *vc2 = [[YQNavigationController alloc] initWithRootViewController:self.contactVC];
-        UIViewController *vc3 = [[UIViewController alloc] init];
-        vc3.tabBarItem.title = @"发现";
-        UIViewController *vc4 = [[UIViewController alloc] init];
-        vc4.tabBarItem.title = @"我";
+        YQNavigationController *vc3 = [[YQNavigationController alloc] initWithRootViewController:self.discoverVC];
+        YQNavigationController *vc4 = [[YQNavigationController alloc] initWithRootViewController:self.meVC];
 
         _childVCArray = @[vc1, vc2, vc3, vc4];
     }
@@ -68,6 +70,26 @@ static YQRootViewController *sharedInstance;
         _contactVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_contactsHL"];
     }
     return _contactVC;
+}
+
+- (YQDiscoverViewController *)discoverVC {
+    if (!_discoverVC) {
+        _discoverVC = [[YQDiscoverViewController alloc] init];
+        _discoverVC.tabBarItem.title = @"发现";
+        _discoverVC.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
+        _discoverVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_discoverHL"];
+    }
+    return _discoverVC;
+}
+
+- (YQMeViewController *)meVC {
+    if (!_meVC) {
+        _meVC = [[YQMeViewController alloc] init];
+        _meVC.tabBarItem.title = @"我";
+        _meVC.tabBarItem.image = [UIImage imageNamed:@"tabbar_me"];
+        _meVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_meHL"];
+    }
+    return _meVC;
 }
 
 @end
